@@ -234,7 +234,7 @@ public class RecorderService extends Service {
         running = true;
     }
 
-    private void setupAudio(boolean useSys, boolean useMic) {
+       private void setupAudio(boolean useSys, boolean useMic) throws Exception {
         if (useSys) {
             AudioPlaybackCaptureConfiguration cfg = new AudioPlaybackCaptureConfiguration.Builder(projection)
                     .addMatchingUsage(AudioAttributes.USAGE_MEDIA)
